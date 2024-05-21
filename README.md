@@ -11,6 +11,7 @@
 - `Enemy.h` e `Enemy.cpp`: Definição e implementação da classe de inimigo
 - `Item.h` e `Item.cpp`: Definição e implementação da classe de item
 - `CombatSystem.h` e `CombatSystem.cpp`: Implementação do sistema de combate
+- `Drop.h` e `Drop.cpp`: Implementação dos drops e taxas de drops
 - `Shop.h` e `Shop.cpp`: Implementação da loja e sistema financeiro
 - `Game.h` e `Game.cpp`: Controle do fluxo do jogo
 
