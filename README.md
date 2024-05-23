@@ -1,6 +1,6 @@
 # RPG Medieval simplificado em C++ 🧙‍♂️🪄
 
-## 📝 Planejamento e Preparação
+## 📝 Planejamento e Preparação:
 - Tema: RPG medieval
 - Objetivos: Criar um jogo simples com elementos básicos de RPG
 - Linguagem: C++
