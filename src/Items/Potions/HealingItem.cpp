@@ -1,4 +1,4 @@
-#include "HealingItem.h"
+#include "../Potions/HealingItem.h"
 #include "BaseCharacter.h"
 
 void HealingItem::use(BaseCharacter& character) {

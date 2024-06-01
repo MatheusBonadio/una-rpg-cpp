@@ -18,8 +18,9 @@ private:
     int experience;
 
 public:
-    Hero(const string& name, int health = 0, int power = 0, int defence = 0)
-    : BaseCharacter(name, health, power, defence), gold(0), experience(0) {}
+    Hero(const string& name, int health = 0, int strength = 0, int intelligence = 0, int defence = 0, int dexterity = 0)
+    : BaseCharacter(name, health, strength, intelligence, defence, dexterity), gold(0), experience(0) {}
+    //Future we can add a new status "agility", this stat provide a bonus of attribute dodge 
 
 
     int getGold() const { return gold; }

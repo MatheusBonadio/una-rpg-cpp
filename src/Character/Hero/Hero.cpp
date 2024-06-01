@@ -1,4 +1,4 @@
-#include "Hero.h"
+#include "../Hero.h"
 #include <iostream>
 
 using namespace std;
@@ -31,8 +31,12 @@ void Hero::removeItem(const string& itemName) {
 void Hero::applyBonus() {
     int newDefence = getDefence() + 5;
     int newHealth = getHealth() + 5;
-    int newPower = getPower() + 5;
+    int newStrength = getStrength() + 5;
+    int newIntelligence = getIntelligence() + 5;
+    int newDexterity = getDexterity() + 5;
     setDefence(newDefence);
     setHealth(newHealth);
-    setPower(newPower);
+    setStrength(newStrength);
+    setIntelligence(newIntelligence);
+    setDexterity(newDexterity);
 }
