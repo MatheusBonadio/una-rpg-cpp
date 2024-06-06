@@ -69,3 +69,17 @@
 
 ### Testes de Jogabilidade
 - Testes para verificar a fluidez do jogo, balanceamento e ausência de bugs
+
+## 🔥 Integrando Firebase ao Projeto
+
+Este projeto utiliza requisições REST via curl para interagir com o Firebase, permitindo acesso aos dados armazenados no Firebase Realtime Database.
+
+### Pré-requisitos
+
+Antes de começar, verifique se você tem instalado:
+
+- **Biblioteca nlohmann/json**: Esta biblioteca é necessária para manipular JSON em C++. Você pode encontrar [aqui](https://github.com/nlohmann/json).
+- **Curl Library**: Você precisará da biblioteca Curl para fazer solicitações HTTP ao Firebase. Você pode baixar a versão pré-compilada do Curl em [https://curl.se/windows/](https://curl.se/windows/).
+
+
+
