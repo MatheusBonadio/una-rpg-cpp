@@ -4,7 +4,7 @@
 using namespace std;
 
 void BaseCharacter::displayStatus() {
-    cout << "Name: " << characterName << "\nHealth: " << health << "\nPower: " << power << "\nDefence: " << defence << endl;
+    cout << "Name: " << characterName << "\nHealth: " << health << "\nStrength: " << strength << "\nDefence: " << defence << "\nDexterity: " << dexterity <<endl;
 }
 
 void BaseCharacter::damageTaken(int damage) {

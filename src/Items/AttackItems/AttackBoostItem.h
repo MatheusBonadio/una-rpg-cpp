@@ -1,8 +1,7 @@
 #ifndef ATTACKBOOSTITEM_H
 #define ATTACKBOOSTITEM_H
 
-#include "Item.h"
-#include "BaseCharacter.h"
+#include "../Item.h"
 
 class AttackBoostItem : public Item
 {
