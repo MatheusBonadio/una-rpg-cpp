@@ -1,8 +1,7 @@
 #ifndef DEFENSEBOOSTITEM_H
 #define DEFENSEBOOSTITEM_H
 
-#include "Item.h"
-#include "BaseCharacter.h"
+#include "../Item.h"
 
 class DefenseBoostItem : public Item
 {

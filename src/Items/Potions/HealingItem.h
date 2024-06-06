@@ -1,8 +1,7 @@
 #ifndef HEALINGITEM_H
 #define HEALINGITEM_H
 
-#include "Item.h"
-#include "BaseCharacter.h"
+#include "../Item.h"
 
 class HealingItem : public Item
 {

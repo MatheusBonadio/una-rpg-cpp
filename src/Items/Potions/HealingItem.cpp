@@ -1,5 +1,5 @@
 #include "../Potions/HealingItem.h"
-#include "BaseCharacter.h"
+#include "../../Character/BaseCharacter.h"
 
 void HealingItem::use(BaseCharacter& character) {
     int newHealth = character.getHealth() + healAmount;

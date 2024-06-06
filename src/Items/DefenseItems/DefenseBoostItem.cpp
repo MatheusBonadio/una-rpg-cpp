@@ -1,5 +1,5 @@
 #include "DefenseBoostItem.h"
-#include "BaseCharacter.h"
+#include "../../Character/BaseCharacter.h"
 
 void DefenseBoostItem::use(BaseCharacter& character) {
     int newDefence = character.getDefence() + defenseBoost;
