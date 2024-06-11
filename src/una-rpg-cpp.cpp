@@ -11,10 +11,11 @@ using namespace std;
 
 int main()
 {
-    vector<string> heroDialogues = fetchIntroductionDialogues();
+    vector<string> heroDialogues = fetchHeroIntroductionDialogues();
+    vector<string> enemyDialogues = fetchEnemyIntroductionDialogues();
 
 
-    ////Obt�m a vers�o do banco de dados do Firebase
+    ////Obt�m a versao do banco de dados do Firebase
     float version = fetchDatabaseVersion();
 
     ////Verifica se a vers�o foi obtida com sucesso
@@ -39,10 +40,16 @@ int main()
             cout << "- " << name << endl;
         }
 
-        cout << "\n\nDialogues:" << endl;
+        cout << "\n\nHero Dialogues:" << endl;
         for (const auto& dialogue : heroDialogues)
         {
             cout << "- " << dialogue << endl;
+        }
+
+        cout << "\n\nEnemy Dialogues:" << endl;
+        for (const auto& Enemydialogue : enemyDialogues)
+        {
+            cout << "- " << Enemydialogue << endl;
         }
     }
     else
