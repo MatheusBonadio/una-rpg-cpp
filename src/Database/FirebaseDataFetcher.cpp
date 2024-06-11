@@ -34,3 +34,122 @@ std::vector<std::string> fetchWeaponsNames() {
 
     return weaponNames;
 }
+
+std::vector<std::string> fetchAttackDialogues() {
+    FirebaseClient firebaseClient;
+    std::string url = "https://una-rpg-default-rtdb.firebaseio.com/Hero/dialogue/attack.json";
+    nlohmann::json dialoguesJSON = firebaseClient.getJSONValue(url);
+
+    std::vector<std::string> dialogues;
+
+    // Verifica se o JSON retornado é nulo
+    if (dialoguesJSON.is_null()) {
+        std::cerr << "Error: Received JSON is null." << std::endl;
+        return dialogues; // Retorna vazio em caso de erro
+    }
+
+    // Exibe o JSON recebido para depuração
+    // std::cout << "\nJSON recebido: " << dialoguesJSON.dump(4) << std::endl;
+
+    // Percorre o JSON para extrair as falas
+    for (auto& dialogue : dialoguesJSON) {
+        if (dialogue.is_string()) {
+            dialogues.push_back(dialogue.get<std::string>());
+        }
+        else {
+            std::cerr << "Error: Dialogue entry is not a string." << std::endl;
+        }
+    }
+
+    return dialogues;
+}
+
+
+std::vector<std::string> fetchDefenceDialogues() {
+    FirebaseClient firebaseClient;
+    std::string url = "https://una-rpg-default-rtdb.firebaseio.com/Hero/dialogue/defense.json";
+    nlohmann::json dialoguesJSON = firebaseClient.getJSONValue(url);
+
+    std::vector<std::string> dialogues;
+
+    // Verifica se o JSON retornado é nulo
+    if (dialoguesJSON.is_null()) {
+        std::cerr << "Error: Received JSON is null." << std::endl;
+        return dialogues; // Retorna vazio em caso de erro
+    }
+
+    // Exibe o JSON recebido para depuração
+    // std::cout << "\nJSON recebido: " << dialoguesJSON.dump(4) << std::endl;
+
+    // Percorre o JSON para extrair as falas
+    for (auto& dialogue : dialoguesJSON) {
+        if (dialogue.is_string()) {
+            dialogues.push_back(dialogue.get<std::string>());
+        }
+        else {
+            std::cerr << "Error: Dialogue entry is not a string." << std::endl;
+        }
+    }
+
+    return dialogues;
+}
+
+
+std::vector<std::string> fetchInteractionDialogues() {
+    FirebaseClient firebaseClient;
+    std::string url = "https://una-rpg-default-rtdb.firebaseio.com/Hero/dialogue/interaction.json";
+    nlohmann::json dialoguesJSON = firebaseClient.getJSONValue(url);
+
+    std::vector<std::string> dialogues;
+
+    // Verifica se o JSON retornado é nulo
+    if (dialoguesJSON.is_null()) {
+        std::cerr << "Error: Received JSON is null." << std::endl;
+        return dialogues; // Retorna vazio em caso de erro
+    }
+
+    // Exibe o JSON recebido para depuração
+    // std::cout << "\nJSON recebido: " << dialoguesJSON.dump(4) << std::endl;
+
+    // Percorre o JSON para extrair as falas
+    for (auto& dialogue : dialoguesJSON) {
+        if (dialogue.is_string()) {
+            dialogues.push_back(dialogue.get<std::string>());
+        }
+        else {
+            std::cerr << "Error: Dialogue entry is not a string." << std::endl;
+        }
+    }
+
+    return dialogues;
+}
+
+
+std::vector<std::string> fetchIntroductionDialogues() {
+    FirebaseClient firebaseClient;
+    std::string url = "https://una-rpg-default-rtdb.firebaseio.com/Hero/dialogue/introduction.json";
+    nlohmann::json dialoguesJSON = firebaseClient.getJSONValue(url);
+
+    std::vector<std::string> dialogues;
+
+    // Verifica se o JSON retornado é nulo
+    if (dialoguesJSON.is_null()) {
+        std::cerr << "Error: Received JSON is null." << std::endl;
+        return dialogues; // Retorna vazio em caso de erro
+    }
+
+    // Exibe o JSON recebido para depuração
+    // std::cout << "\nJSON recebido: " << dialoguesJSON.dump(4) << std::endl;
+
+    // Percorre o JSON para extrair as falas
+    for (auto& dialogue : dialoguesJSON) {
+        if (dialogue.is_string()) {
+            dialogues.push_back(dialogue.get<std::string>());
+        }
+        else {
+            std::cerr << "Error: Dialogue entry is not a string." << std::endl;
+        }
+    }
+
+    return dialogues;
+}

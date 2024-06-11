@@ -11,6 +11,9 @@ using namespace std;
 
 int main()
 {
+    vector<string> heroDialogues = fetchIntroductionDialogues();
+
+
     ////Obt�m a vers�o do banco de dados do Firebase
     float version = fetchDatabaseVersion();
 
@@ -24,21 +27,27 @@ int main()
         cerr << "Failed to obtain the database version." << endl;
     }
 
-    // Obt�m os nomes das armas
-    vector<string> weaponNames = fetchWeaponsNames();
+    // Obtem os nomes das armas e coloca no vetor
+    vector<string> weaponNames = fetchWeaponsNames(); 
 
-    // Verifica se os nomes das armas foram obtidos com sucesso
-    if (!weaponNames.empty())
+    // Verifica se os dados foram obtidos com sucesso
+    if (!weaponNames.empty() && !heroDialogues.empty())
     {
         cout << "Available weapons in the database:" << endl;
         for (const auto &name : weaponNames)
         {
             cout << "- " << name << endl;
         }
+
+        cout << "\n\nDialogues:" << endl;
+        for (const auto& dialogue : heroDialogues)
+        {
+            cout << "- " << dialogue << endl;
+        }
     }
     else
     {
-        cerr << "Failed to retrieve weapon names." << endl;
+        cerr << "Failed to retrieve database." << endl;
     }
 
     Hero hero("Vitor", 0, 0, 0);
