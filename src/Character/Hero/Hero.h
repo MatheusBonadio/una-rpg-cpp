@@ -5,7 +5,7 @@
 #include "../../Items/Item.h"
 #include <vector>
 #include <string>
-#include<algorithm>
+#include <algorithm>
 
 // Defining the Hero class, which is derived from BaseCharacter. 
 // It has an array of pointers to items called inventory, as well as attributes for gold and experience.
