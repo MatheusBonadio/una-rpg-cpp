@@ -1,6 +1,4 @@
-#ifndef FIREBASECLIENT_H
-#define FIREBASECLIENT_H
-
+#pragma once
 #include <string>
 #include <nlohmann/json.hpp> // Adicione esta linha para incluir a biblioteca JSON
 
@@ -21,5 +19,3 @@ public:
 private:
     static size_t WriteCallback(void* contents, size_t size, size_t nmemb, std::string* s);
 };
-
-#endif // FIREBASECLIENT_H

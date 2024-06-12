@@ -1,5 +1,4 @@
-#ifndef GAME_H
-#define GAME_H
+#pragma once
 
 class Game {
 public:
@@ -9,5 +8,3 @@ public:
 
 	void chooseClass();
 };
-
-#endif // GAME_H

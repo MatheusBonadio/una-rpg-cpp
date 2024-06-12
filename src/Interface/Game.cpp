@@ -7,8 +7,7 @@
 #include "../Character/Hero/Class/Warrior.h"
 #include "../Character/Hero/Hero.h"
 #include "../Character/Enemy/Enemy.h"
-#include "../../Combat.h"
-#include <iostream>
+#include "../Character/Combat.h"
 
 using namespace std;
 
@@ -18,7 +17,14 @@ void Game::startNewGame() {
 }
 
 void Game::showCredits() {
-    cout << "Game developed by" << endl;
+    cout << "Game developed by: " << endl;
+	cout << "Angelo Kuan Kai Huang" << endl;
+	cout << "João Pedro Luchetta" << endl;
+	cout << "João Lucas Rissi da Silva" << endl;
+	cout << "Kayky Luiz de Paula Araujo" << endl;
+	cout << "Marco Antônio Lonardon Júnior" << endl;
+	cout << "Matheus Lima Bonadio" << endl;
+	cout << "Vítor Nascimento Moreira" << endl;
 }
 
 void Game::exitGame() {

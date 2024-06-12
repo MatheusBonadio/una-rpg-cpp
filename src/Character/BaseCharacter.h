@@ -1,6 +1,4 @@
-#ifndef BASE_CHARACTER_H
-#define BASE_CHARACTER_H
-
+#pragma once
 #include <iostream>
 #include <string>
 #include <algorithm>
@@ -58,5 +56,3 @@ public:
     }
 
 };
-
-#endif
