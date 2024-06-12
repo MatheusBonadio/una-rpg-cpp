@@ -5,7 +5,7 @@
 #include "../../Items/Item.h"
 #include <vector>
 #include <string>
-#include <algorithm>
+#include<algorithm>
 
 // Defining the Hero class, which is derived from BaseCharacter. 
 // It has an array of pointers to items called inventory, as well as attributes for gold and experience.
@@ -18,8 +18,8 @@ private:
     int experience;
 
 public:
-    Hero(const string& name, int health = 0, int strength = 0, int defence = 0, int dexterity = 0)
-    : BaseCharacter(name, health, strength, defence, dexterity), gold(0), experience(0) {}
+    Hero(const string& name, int health = 0, int strength = 0, int defence = 0)
+    : BaseCharacter(name, health, strength, defence), gold(0), experience(0) {}
     //Future we can add a new status "agility", this stat provide a bonus of attribute dodge 
 
 

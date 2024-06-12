@@ -33,7 +33,7 @@ int main()
 			game.exitGame();
 			return 0;  // Saia do programa
 		default:
-			std::cout << "Invalid option. Please try again." << std::endl;
+			std::cout << "\n\nInvalid option. Please try again." << std::endl;
 		}
 	}
 

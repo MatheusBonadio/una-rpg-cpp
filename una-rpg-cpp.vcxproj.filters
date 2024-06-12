@@ -66,13 +66,16 @@
     <ClCompile Include="src\Database\FirebaseDataFetcher.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\Interface\Game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="src\Interface\Menu.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\Interface\Screen.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\Interface\Game.cpp">
+    <ClCompile Include="Combat.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -116,13 +119,16 @@
     <ClInclude Include="src\Database\FirebaseDataFetcher.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\Interface\Game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="src\Interface\Menu.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\Interface\Screen.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\Interface\Game.h">
+    <ClInclude Include="Combat.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
