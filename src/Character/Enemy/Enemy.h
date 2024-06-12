@@ -17,6 +17,7 @@ public:
     int getExpDrop() const {return expDrop;}
 
     void displayStatus () override;
+    //void applyHealt();
 };
 
 
