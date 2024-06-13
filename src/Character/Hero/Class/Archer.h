@@ -1,6 +1,4 @@
-#ifndef ARCHER_H
-#define ARCHER_H
-
+#pragma once
 #include "../Hero.h"
 
 class Archer : public Hero
@@ -14,5 +12,3 @@ public:
 
     void applyBonus() override;
 };
-
-#endif

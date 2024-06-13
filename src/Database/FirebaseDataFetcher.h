@@ -1,7 +1,4 @@
-#ifndef FIREBASEDATAFETCHER_H
-#define FIREBASEDATAFETCHER_H
-
-//#include "FirebaseClient.h"
+#pragma once
 #include <string>
 #include <vector>
 
@@ -16,5 +13,3 @@ std::vector<std::string> fetchAttackDialogues();
 std::vector<std::string> fetchDefenceDialogues(); 
 std::vector<std::string> fetchInteractionDialogues();
 std::vector<std::string> fetchIntroductionDialogues();
-
-#endif // FIREBASEDATAFETCHER_H

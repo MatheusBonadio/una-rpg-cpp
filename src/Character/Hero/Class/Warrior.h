@@ -1,6 +1,4 @@
-#ifndef WARRIOR_H
-#define WARRIOR_H
-
+#pragma once
 #include "../Hero.h"
 
 class Warrior : public Hero
@@ -8,11 +6,8 @@ class Warrior : public Hero
 private:
     
 public:
-//IMPORTANT: DECIDE ALL THE BASE STATS FOR EACH CLASS
     Warrior(const string& name, int health = 0, int strength = 0, int defence = 0)
     : Hero(name, health, strength, defence) {}
 
     void applyBonus() override;
 };
-
-#endif

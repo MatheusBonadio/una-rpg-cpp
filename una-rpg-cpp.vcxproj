@@ -23,7 +23,7 @@
     <ProjectGuid>{31402AB2-05BB-4BC4-BE9B-D94DFAC713E8}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>unarpgcpp</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -48,7 +48,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -165,7 +165,7 @@
     <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Combat.cpp" />
+    <ClCompile Include="src\Character\Combat.cpp" />
     <ClCompile Include="src\Character\BaseCharacter.cpp" />
     <ClCompile Include="src\Character\Enemy\Enemy.cpp" />
     <ClCompile Include="src\Character\Hero\Class\Archer.cpp" />
@@ -177,7 +177,6 @@
     <ClCompile Include="src\Database\FirebaseDataFetcher.cpp" />
     <ClCompile Include="src\Interface\Game.cpp" />
     <ClCompile Include="src\Interface\Menu.cpp" />
-    <ClCompile Include="src\Interface\Screen.cpp" />
     <ClCompile Include="src\Items\AttackItems\AttackBoostItem.cpp" />
     <ClCompile Include="src\Items\DefenseItems\DefenseBoostItem.cpp" />
     <ClCompile Include="src\Items\Item.cpp" />
@@ -185,7 +184,7 @@
     <ClCompile Include="src\una-rpg-cpp.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Combat.h" />
+    <ClInclude Include="src\Character\Combat.h" />
     <ClInclude Include="src\Character\BaseCharacter.h" />
     <ClInclude Include="src\Character\Enemy\Enemy.h" />
     <ClInclude Include="src\Character\Hero\Class\Archer.h" />
@@ -197,7 +196,6 @@
     <ClInclude Include="src\Database\FirebaseDataFetcher.h" />
     <ClInclude Include="src\Interface\Game.h" />
     <ClInclude Include="src\Interface\Menu.h" />
-    <ClInclude Include="src\Interface\Screen.h" />
     <ClInclude Include="src\Items\AttackItems\AttackBoostItem.h" />
     <ClInclude Include="src\Items\DefenseItems\DefenseBoostItem.h" />
     <ClInclude Include="src\Items\Item.h" />

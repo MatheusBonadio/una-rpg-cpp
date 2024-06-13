@@ -1,6 +1,4 @@
-#ifndef DEFENSEBOOSTITEM_H
-#define DEFENSEBOOSTITEM_H
-
+#pragma once
 #include "../Item.h"
 
 class DefenseBoostItem : public Item
@@ -14,5 +12,3 @@ public:
 
     void use(BaseCharacter& character) override;
 };
-
-#endif

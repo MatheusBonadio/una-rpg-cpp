@@ -1,6 +1,4 @@
-#ifndef ATTACKBOOSTITEM_H
-#define ATTACKBOOSTITEM_H
-
+#pragma once
 #include "../Item.h"
 
 class AttackBoostItem : public Item
@@ -19,5 +17,3 @@ public:
     }
 
 };
-
-#endif

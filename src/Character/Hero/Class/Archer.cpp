@@ -9,5 +9,4 @@ void Archer::applyBonus() {
     setDefence(newDefence);
     setHealth(newHealth);
     setStrength(newStrength);
-    
 }

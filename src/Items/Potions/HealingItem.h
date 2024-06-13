@@ -1,6 +1,4 @@
-#ifndef HEALINGITEM_H
-#define HEALINGITEM_H
-
+#pragma once
 #include "../Item.h"
 
 class HealingItem : public Item
@@ -14,5 +12,3 @@ public:
 
     void use(BaseCharacter& character) override;
 };
-
-#endif

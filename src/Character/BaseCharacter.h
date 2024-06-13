@@ -1,6 +1,4 @@
-#ifndef BASE_CHARACTER_H
-#define BASE_CHARACTER_H
-
+#pragma once
 #include <iostream>
 #include <string>
 #include <algorithm>
@@ -46,10 +44,9 @@ public:
     virtual void attack(BaseCharacter& target) {
         int damage = strength - target.getDefence();
         if (damage < 1) damage = 1;
-        cout << damage;
         int vida = target.getHealth();
         target.damageTaken(damage);
-        cout << endl <<characterName << " attacked " << target.getName() << " causing " << damage << " damage." << endl;       
+        cout << characterName << " attacked " << target.getName() << " causing " << damage << " damage." << endl;       
     }
 
     void takeDamage(int damage) {
@@ -58,5 +55,3 @@ public:
     }
 
 };
-
-#endif

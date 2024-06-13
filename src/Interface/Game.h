@@ -1,5 +1,6 @@
-#ifndef GAME_H
-#define GAME_H
+#pragma once
+
+#include "../Character/Hero/Hero.h"
 
 class Game {
 public:
@@ -8,6 +9,5 @@ public:
 	void exitGame();
 
 	void chooseClass();
+	void chooseAction(Hero& hero);
 };
-
-#endif // GAME_H
