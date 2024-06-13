@@ -6,22 +6,20 @@
 - Linguagem: C++
 
 ## 🏗️ Estrutura Básica do Jogo
-- `main.cpp`: Ponto de entrada do jogo
+- `una-rpg-cpp.cpp`: Ponto de entrada do jogo
 - `Character.h` e `Character.cpp`: Definição e implementação da classe de personagem
 - `Enemy.h` e `Enemy.cpp`: Definição e implementação da classe de inimigo
 - `Item.h` e `Item.cpp`: Definição e implementação da classe de item
-- `CombatSystem.h` e `CombatSystem.cpp`: Implementação do sistema de combate
-- `Drop.h` e `Drop.cpp`: Implementação dos drops e taxas de drops
-- `Shop.h` e `Shop.cpp`: Implementação da loja e sistema financeiro
+- `Combat.h` e `Combat.cpp`: Implementação do sistema de combate
 - `Game.h` e `Game.cpp`: Controle do fluxo do jogo
 
 ## ⚙️ Implementação dos Componentes Principais
 
 ### Personagens, Classes e Poderes
 - **Character Class**:
-  - Atributos: nome, saúde, mana, força, defesa, etc.
+  - Atributos: nome, vida, mana, força, defesa, etc.
   - Métodos: atacar, defender, usar poder, etc.
-- **Classes**: Guerreiro, Mago, Arqueiro
+- **Classes**: Guerreiro, Mago, Arqueiro e Tank
   - Cada classe com atributos e poderes específicos
 
 ### Inimigos (Comum e Boss)
@@ -47,25 +45,10 @@
 - **Combat System**:
   - Lógica de turnos: ordem de ataque, cálculo de dano, verificação de vitórias e derrotas
 
-### Loja e Sistema Financeiro
-- **Shop Class**:
-  - Atributos: lista de itens à venda, preços
-  - Métodos: comprar item, vender item, visualizar itens disponíveis
-
-### Armadilhas
-- **Trap Class**:
-  - Atributos: tipo, dano, efeito
-  - Métodos: ativar armadilha, desativar armadilha
-
 ## 🧪 Integração e Testes
 
 ### Integração dos Componentes
 - Integração do sistema de personagens com o sistema de combate
-- Integração do inventário com a loja
-- Integração das armadilhas no fluxo do jogo
-
-### Testes Unitários
-- Testes para cada classe e sistema individualmente
 
 ### Testes de Jogabilidade
 - Testes para verificar a fluidez do jogo, balanceamento e ausência de bugs
@@ -78,8 +61,4 @@ Este projeto utiliza requisições REST via curl para interagir com o Firebase, 
 
 Antes de começar, verifique se você tem instalado:
 
-- **Biblioteca nlohmann/json**: Esta biblioteca é necessária para manipular JSON em C++. Você pode encontrar [aqui](https://github.com/nlohmann/json).
 - **Curl Library**: Você precisará da biblioteca Curl para fazer solicitações HTTP ao Firebase. Você pode baixar a versão pré-compilada do Curl em [https://curl.se/windows/](https://curl.se/windows/).
-
-
-

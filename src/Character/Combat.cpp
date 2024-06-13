@@ -4,12 +4,13 @@
 
 using namespace std;
 
-void Combat::combatTurn(BaseCharacter& player, BaseCharacter& enemy) {
+void Combat::combatTurn(Hero& player, Enemy& enemy) {
     int round = 1;
 
-    enemy.setHealth(10);
+	player.displayStatus();
+	enemy.displayStatus();
 
-    cout << "Combat turn initiated between " << player.getName() << " and " << enemy.getName() << endl;
+    cout << endl << "Combat turn initiated between " << player.getName() << " and " << enemy.getName() << endl;
 
     while (player.isAlive() && enemy.isAlive()) {
         cout << "\n---- Round " << round << " ----" << endl;
@@ -17,17 +18,16 @@ void Combat::combatTurn(BaseCharacter& player, BaseCharacter& enemy) {
         cout << "Press Enter to attack..." << endl;
         cin.get();
 
-        cout << player.getName() << " attacks " << enemy.getName() << endl;
         player.attack(enemy);
-        cout << "After attack, " << enemy.getName() << " is alive: " << enemy.isAlive() << endl;
+        cout << "After attack, " << enemy.getName() << " is alive with " << enemy.getHealth() << " points of life" << endl;
 
         if (enemy.isAlive()) {
-            cout << "Press Enter to attack..." << endl;
-            cin.get();
+			cout << endl;
+            /*cout << "Press Enter to attack..." << endl;
+            cin.get();*/
 
-            cout << enemy.getName() << " attacks " << player.getName() << endl;
             enemy.attack(player);
-            cout << "After attack, " << player.getName() << " is alive: " << player.isAlive() << endl;
+            cout << "After attack, " << player.getName() << " is alive with " << player.getHealth() << " points of life" << endl;
         }
 
         cout << "\n---- Status After Round of Attacks ----" << endl;
@@ -37,18 +37,18 @@ void Combat::combatTurn(BaseCharacter& player, BaseCharacter& enemy) {
         round++;
     }
 
-    cout << "\n===========================================\n";
-    cout << "                  RESULT                     \n";
-    cout << "=============================================\n";
+	cout << "\n---- Result ----" << endl;
 
     if (player.isAlive()) {
-        cout << setw(20) << player.getName() << " won the fight!\n";
+        cout << player.getName() << " won the fight!\n";
+		enemy.died(player);
+		enemy.displayStatus();
     }
     else if (enemy.isAlive()) {
-        cout << setw(20) << enemy.getName() << " won the fight!\n";
+        cout << enemy.getName() << " won the fight!\n";
     }
     else {
-        cout << setw(20) << "Both characters died. A tie!\n";
+        cout << "Both characters died. A tie!\n";
     }
 
     cout << "=============================================\n";

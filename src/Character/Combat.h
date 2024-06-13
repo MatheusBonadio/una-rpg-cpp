@@ -1,7 +1,8 @@
 #pragma once
-#include "BaseCharacter.h"
+#include "Hero/Hero.h"
+#include "Enemy/Enemy.h"
 
 class Combat {
 public:
-    static void combatTurn(BaseCharacter& player, BaseCharacter& enemy);
+    static void combatTurn(Hero& player, Enemy& enemy);
 };

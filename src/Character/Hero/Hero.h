@@ -6,11 +6,12 @@
 #include <string>
 #include <algorithm>
 
+using namespace std;
 
 class Hero : public BaseCharacter
 {
 private:
-    vector<Item*> inventory;
+	vector<Item*> inventory;
     int gold;
     int experience;
 
@@ -21,7 +22,6 @@ public:
     int getGold() const { return gold; }
     int getExperience() const { return experience; }
     const vector<Item*>& getInventory() const { return inventory; }
-
     
     void addGold(int amount) { gold += amount; }
     void addExperience(int exp) { experience += exp; }

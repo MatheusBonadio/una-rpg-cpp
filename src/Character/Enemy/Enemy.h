@@ -1,5 +1,6 @@
 #pragma once
 #include "../BaseCharacter.h"
+#include "../Hero/Hero.h"
 
 class Enemy : public BaseCharacter
 {
@@ -15,4 +16,6 @@ public:
 	int getExpDrop() const {return expDrop;}
 
 	void displayStatus () override;
+	void applyBonus() override;
+	void died(Hero& hero);
 };

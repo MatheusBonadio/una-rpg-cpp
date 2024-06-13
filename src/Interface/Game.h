@@ -1,5 +1,7 @@
 #pragma once
 
+#include "../Character/Hero/Hero.h"
+
 class Game {
 public:
 	void startNewGame();
@@ -7,4 +9,5 @@ public:
 	void exitGame();
 
 	void chooseClass();
+	void chooseAction(Hero& hero);
 };
